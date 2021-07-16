@@ -11,9 +11,11 @@ public class Maior {
 
         if (a>b) {
             System.out.println("O número " + a + " é maior que " + b);
-        } else {
-            System.out.println("O número " + b + " é maior que " + a);
-            
+        } else if (b>a) {
+            System.out.println("O número " + b + " é maior que " + a); 
+        }
+        else{
+            System.out.println("Os números inseridos são iguais");
         }
     }  
 }
