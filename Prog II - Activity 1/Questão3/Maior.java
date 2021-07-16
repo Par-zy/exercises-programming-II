@@ -17,5 +17,7 @@ public class Maior {
         else{
             System.out.println("Os números inseridos são iguais");
         }
+
+        read.close();
     }  
 }
