@@ -1,5 +1,17 @@
 import java.util.Scanner;
 public class Maior {
+    
+    public static void bigger(int A, int B) {
+        if (A>B) {
+            System.out.println("O número " + A + " é maior que " + B);
+        } else if (B>A) {
+            System.out.println("O número " + B + " é maior que " + A); 
+        }
+        else{
+            System.out.println("Os números inseridos são iguais");
+        }
+    }
+
     public static void main(String args[]) {
         int a, b;
         Scanner read = new Scanner(System.in);
@@ -9,14 +21,7 @@ public class Maior {
         System.out.println("Insira o segundo número: ");
         b = read.nextInt();
 
-        if (a>b) {
-            System.out.println("O número " + a + " é maior que " + b);
-        } else if (b>a) {
-            System.out.println("O número " + b + " é maior que " + a); 
-        }
-        else{
-            System.out.println("Os números inseridos são iguais");
-        }
+        bigger(a, b);
 
         read.close();
     }  
